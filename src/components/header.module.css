@@ -1,0 +1,75 @@
+/*----------------------------------------
+    header
+----------------------------------------*/
+.header_main {
+  composes: larger_inner from global;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.logo {
+  padding: 25px 0 12px 0;
+}
+.logo a:hover {
+  opacity: 1;
+}
+.header_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.header_nav_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_nav_list > li {
+  margin: 0 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header_language {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.header_language li:not(:first-child) {
+  margin-left: 6px;
+}
+.header_language li a {
+  display: block;
+  background-color: #d2d2d2;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #666;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.header_language li a:hover,
+.header_language li.current a {
+  background-color: #491c7d;
+  color: #fff;
+}
+
+@media screen and (max-width: 1060px) {
+  .logo {
+    width: 150px;
+  }
+  .header_info .header_nav ul li {
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+  .header_info .header_language {
+    margin-left: 20px;
+  }
+  .header_info .header_language li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
+  }
+}

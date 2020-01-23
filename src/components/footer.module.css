@@ -1,0 +1,132 @@
+/*----------------------------------------
+    footer
+----------------------------------------*/
+.inner {
+  composes: inner from global;
+  max-width: 906px;
+}
+.contact {
+  background: url(../images/bg-contact.png) no-repeat center;
+  background-size: cover;
+  padding: 50px 0 30px 0;
+}
+.section_title {
+  composes: section_title from global;
+  margin-bottom: 40px;
+}
+.contact_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tel,
+.mail {
+  flex: 1 1 360px;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: #491c7d;
+  color: #fff;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 111px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+.tel {
+  flex: 1 1 320px;
+}
+.tel a {
+  font-size: 4.0rem;
+  color: #fff;
+  pointer-events: none;
+}
+.mail span {
+  font-size: 2.8rem;
+}
+.contact_time {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #491c7d;
+  margin-top: 25px;
+}
+.contact .contact_time dt {
+  margin-right: 30px;
+}
+.copyright .copyright_main .copyright_text a {
+  color: #9fa0a0;
+}
+
+@media screen and (max-width: 901px) {
+  .tel a {
+    font-size: 3.0rem;
+  }
+  .mail span {
+    font-size: 2.2rem;
+  }
+}
+
+.links {
+  background-color: #313131;
+  padding: 45px 0;
+}
+.links_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.links_nav .links_item {
+  width: 20%;
+}
+.links_nav .links_item:last-child {
+  width: 27%;
+}
+.links_nav .links_item .column_2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links_nav .links_item .column_2 li {
+  width: 47%;
+}
+.links_nav .links_item h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #959595;
+}
+.links_nav .links_item h2.multiple {
+  margin-top: 30px;
+}
+.links_nav .links_item li {
+  margin-top: 10px;
+}
+.links_nav .links_item a {
+  font-size: 1.4rem;
+  color: #9fa0a0;
+}
+.links_nav .links_item a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  background-color: #000000;
+  color: #9fa0a0;
+  font-size: 1.4rem;
+  padding: 10px 0;
+  text-align: center;
+}
+.copyright .copyright_mian {
+  display: flex;
+  justify-content: center;
+}
+.copyright .copyright_text {
+  margin-right: 13px;
+}
+@media screen and (max-width: 1040px) {
+  .copyright .copyright_mian {
+    flex-direction: column;
+  }
+}
