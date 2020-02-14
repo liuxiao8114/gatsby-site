@@ -6,7 +6,7 @@
   max-width: 906px;
 }
 .contact {
-  background: url(../images/bg-contact.png) no-repeat center;
+  background: no-repeat center;
   background-size: cover;
   padding: 50px 0 30px 0;
 }
